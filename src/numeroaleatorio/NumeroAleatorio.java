@@ -23,6 +23,11 @@ public class NumeroAleatorio {
         int compara = Integer.parseInt(texto);
         int x = 0;
         while (NumeroAleatorio != compara) {
+            if (NumeroAleatorio < compara) {
+                JOptionPane.showMessageDialog(null, "El numero es menor");
+            } else if (NumeroAleatorio > compara) {
+                JOptionPane.showMessageDialog(null, "el numero es mayor");
+            }
             JOptionPane.showMessageDialog(null, "oops, no es el numero");
             x++;
             texto = JOptionPane.showInputDialog("digita el numero a adivinar");
